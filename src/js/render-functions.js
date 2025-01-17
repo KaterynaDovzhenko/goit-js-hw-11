@@ -1,5 +1,3 @@
-// const gallery = document.querySelector('.gallery');
-
 export const createGallery = imgInfo => {
   return `<li class="gallery-card">
         <a href="${imgInfo.largeImageURL}" class="gallery-link">

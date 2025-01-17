@@ -13,7 +13,7 @@ const gallery = document.querySelector('.js-gallery');
 
 const lightbox = new SimpleLightbox('.gallery-link', {
   captionsData: 'alt',
-  captionDelay: 250,
+  captionDelay: 50,
 });
 
 const onSearchFormSubmit = event => {
