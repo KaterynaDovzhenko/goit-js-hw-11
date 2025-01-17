@@ -1,36 +1,11 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
-
-.vite-promo {
-  display: none;
-}
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
 }
 
 .gallery-card {
-  width: 200px;
-  height: auto;
   list-style: none;
-  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
@@ -48,26 +23,7 @@
   display: block;
 }
 
-.gallery-info {
-  padding: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-.gallery-info p {
-  margin: 5px 0;
-}
-
-.gallery-info strong {
-  font-weight: bold;
-}
-
-.simplelightbox img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
+/* Loader */
 .loader {
   position: fixed;
   top: 0;
